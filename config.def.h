@@ -5,13 +5,16 @@ static const char *group = "nobody";
 
 static const char *colorname[NUMCOLS] = {
     [INIT] = "#458588",        /* after initialization */
-    [INPUT] = "#98971A",     /* during input */
-    [INPUT_ALT] = "#909023", /* during input, second color */
-    [FAILED] = "#CC241D",    /* wrong password */
+    [INPUT] = "#83A598",     /* during input */
+    [INPUT_ALT] = "#78B09A", /* during input, second color */
+    [FAILED] = "#458588",    /* wrong password */
 };
 
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
+
+/* time in seconds before the monitor shuts down */
+static const int monitortime = 30;
 
 /* insert grid pattern with scale 1:1, the size can be changed with logosize */
 static const int logosize = 50;
